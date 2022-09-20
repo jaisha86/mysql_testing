@@ -1,0 +1,19 @@
+Export sql database:
+
+CMD with admin rights
+
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+mysqldump -u root -p testdb > testdb.sql
+
+now .sql will be available inside bin location
+
+Import sql database:
+
+mysql -u root -p testdb3 < "C:\Program Files\MySQL\MySQL Server 8.0\bin\testdb.sql"
+
+OR
+> source (drag & Drop .sql file) ...C:\file\path\testdb.sql
+
+store alone in seperate file
+> select * from javalab into outfile 'D:\\file\\path\\sample.txt';
